@@ -1,5 +1,8 @@
 package studio8;
 
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 
 public class Date {
@@ -56,8 +59,29 @@ public class Date {
 
 	public static void main(String[] args) {
 
-		Date d = new Date(1,21,2004,true);
-		System.out.print(d);
+		Date a = new Date(1,21,2004,true);
+		Date b = new Date(1,21,2004,true);
+		Date c = new Date(2, 21, 2003, false);
+		
+		LinkedList<Date> list = new LinkedList<Date>();
+		list.add(a);
+		list.add(b);
+		list.add(c);
+		System.out.println(list);
+		
+		HashSet<Date> set = new HashSet<Date>();
+		set.add(a);
+		set.add(b);
+		set.add(c);
+		System.out.println(set);
+		
+		//for(Date date: list) {
+			
+	//	}
+	
+		System.out.println(a.equals(b));
+		System.out.println(a.equals(c));
+		System.out.println(b.equals(c));
 		
     }
 
