@@ -69,15 +69,18 @@ public class Date {
 		list.add(c);
 		System.out.println(list);
 		
+		//Only Prints out the equal dates!!!
 		HashSet<Date> set = new HashSet<Date>();
 		set.add(a);
 		set.add(b);
 		set.add(c);
 		System.out.println(set);
 		
+		//for each loop
+		
 		//for(Date date: list) {
 			
-	//	}
+		//	}
 	
 		System.out.println(a.equals(b));
 		System.out.println(a.equals(c));
