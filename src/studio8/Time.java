@@ -26,7 +26,9 @@ public class Time {
 		}
 
 		public static void main(String[] args) {
+			
 			Time a = new Time(1,40,true);
+			System.out.print(a);
 	    }
 
 		@Override
